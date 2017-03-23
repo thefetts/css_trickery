@@ -1,0 +1,108 @@
+#main {
+    display: flex;
+    flex-direction: row;
+}
+
+#left, #right {
+    flex: 0 1 auto;
+    width: 50%;
+}
+
+.container {
+    width: 100px;
+    height: 100px;
+    border: 1px solid black;
+    background-color: lightblue;
+    padding: 5px;
+}
+
+.container div {
+    box-sizing: border-box;
+}
+
+
+/* CIRCLES */
+#circle {
+    height: 100%;
+    border-radius: 50%;
+    background-color: red;
+}
+
+#circle-new {
+    height: 100px;
+    width: 100px;
+    background-color: red;
+    float: left;
+    -webkit-clip-path: circle(50%);
+}
+
+/* TRIANGLES */
+#triangle {
+    height: 0;
+    width: 0;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    border-bottom: 100px solid green;
+}
+
+#triangle-right {
+    height: 0;
+    width: 0;
+    border-top: 50px solid transparent;
+    border-bottom: 50px solid transparent;
+    border-left: 100px solid yellow;
+}
+
+#triangle-new {
+    width: 100px;
+    height: 100px;
+    float: left;
+    background-color: green;
+    -webkit-clip-path: polygon(0 100%, 100% 100%, 50% 0);
+}
+
+#triangle-right-new {
+    width: 100px;
+    height: 100px;
+    float: left;
+    background-color: yellow;
+    -webkit-clip-path: polygon(0 0, 0 100%, 100% 50%);
+}
+
+.sandcrawler {
+    width: 100px;
+    height: 60px;
+}
+
+.sandcrawler .body {
+    width: 100%;
+    height: 83.3333%;
+    background-color: darkred;
+    -webkit-clip-path: polygon(0 0, 30% 6%, 100% 10%, 94% 90%, 92% 100%, 30% 100%, 3% 36%);
+}
+
+.sandcrawler .treads {
+    padding-left: 20px;
+    height: 10px;
+}
+
+.sandcrawler .tread {
+    margin-left: 11px;
+    width: 31%;
+    height: 100%;
+    background-color: black;
+    float: left;
+    -webkit-clip-path: polygon(3% 15%, 6% 0%, 94% 0, 97% 15%, 88% 90%, 83% 100%, 38% 100%, 33% 90%);
+}
+
+.jawa .jawa-half {
+    width: 20px;
+    height: 40px;
+    float: left;
+    background-color: darkred;
+    -webkit-clip-path: polygon(100% 0, 90% 5%, 70% 25%, 70% 30%, 40% 45%, 60% 55%, 70% 52%, 60% 100%, 100% 100%);
+}
+
+.jawa .jawa-half:nth-child(2) {
+    transform: scale(-1, 1);
+}
