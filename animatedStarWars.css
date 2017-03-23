@@ -1,0 +1,79 @@
+#starWars {
+    width: 100px;
+    height: 100px;
+}
+
+#starWars div {
+    position: absolute;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    width: 100px;
+    height: 100px;
+    background-color: darkred;
+}
+
+#starWars #poly1 { -webkit-clip-path: polygon(0 0, 30% 3%, 3% 20%); }
+#poly1 { animation-name: poly1; }
+@keyframes poly1 {
+    to { -webkit-clip-path: polygon(30% 45%, 75% 85%, 25% 85%); }
+}
+
+#starWars #poly2 { -webkit-clip-path: polygon(30% 3%, 30% 58%, 3% 20%); }
+#poly2 { animation-name: poly2; }
+@keyframes poly2 {
+    to { -webkit-clip-path: polygon(70% 45%, 75% 85%, 30% 45%); }
+}
+
+#starWars #poly3 { -webkit-clip-path: polygon(30% 3%, 90% 58%, 30% 58%); }
+#poly3 { animation-name: poly3; }
+@keyframes poly3 {
+    to { -webkit-clip-path: polygon(0 35%, 30% 45%, 10% 55%); }
+}
+
+#starWars #poly4 { -webkit-clip-path: polygon(30% 3%, 95% 55%, 90% 58%); }
+#poly4 { animation-name: poly4; }
+@keyframes poly4 {
+    to { -webkit-clip-path: polygon(0 35%, 33.333% 25%, 30% 45%); }
+}
+
+#starWars #poly5 { -webkit-clip-path: polygon(30% 3%, 100% 7%, 95% 55%); }
+#poly5 { animation-name: poly5; }
+@keyframes poly5 {
+    to { -webkit-clip-path: polygon(33.333% 25%, 66.667% 25%, 30% 45%); }
+}
+
+#starWars #poly6 { -webkit-clip-path: polygon(32% 59%, 53% 59%, 40% 70%); background-color: black; }
+#poly6 { animation-name: poly6; }
+@keyframes poly6 {
+    to { -webkit-clip-path: polygon(30% 45%, 66.667% 25%, 70% 45%); background-color: darkred; }
+}
+
+#starWars #poly7 { -webkit-clip-path: polygon(40% 70%, 53% 59%, 53% 70%); background-color: black; }
+#poly7 { animation-name: poly7; }
+@keyframes poly7 {
+    to { -webkit-clip-path: polygon(66.667% 25%, 100% 35%, 70% 45%); background-color: darkred; }
+}
+
+#starWars #poly8 { -webkit-clip-path: polygon(53% 59%, 56% 59%, 53% 70%); background-color: black; }
+#poly8 { animation-name: poly8; }
+@keyframes poly8 {
+    to { -webkit-clip-path: polygon(70% 45%, 100% 35%, 90% 55%); background-color: darkred; }
+}
+
+#starWars #poly9 { -webkit-clip-path: polygon(65% 59%, 86% 59%, 73% 70%); background-color: black; }
+#poly9 { animation-name: poly9; }
+@keyframes poly9 {
+    to { -webkit-clip-path: polygon(33.333% 25%, 37% 8%, 66.667% 25%); background-color: darkred; }
+}
+
+#starWars #poly10 { -webkit-clip-path: polygon(73% 70%, 86% 59%, 86% 70%); background-color: black; }
+#poly10 { animation-name: poly10; }
+@keyframes poly10 {
+    to { -webkit-clip-path: polygon(37% 8%, 63% 8%, 66.667% 25%); background-color: darkred; }
+}
+
+#starWars #poly11 { -webkit-clip-path: polygon(86% 59%, 89% 59%, 86% 70%); background-color: black; }
+#poly11 { animation-name: poly11; }
+@keyframes poly11 {
+    to { -webkit-clip-path: polygon(37% 8%, 50% 0%, 63% 8%); background-color: darkred; }
+}
